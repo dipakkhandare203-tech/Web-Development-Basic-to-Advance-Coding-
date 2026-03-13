@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            border: 2px solid black;
+            width: 250px;
+            height: 250px;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>STUDENT FORM</h3>
+
+    <form action="post">
+
+        <div>
+            <label for="user">Name</label>
+            <input type="text" id="user" name="user" placeholder="Enter Your Name" required autofocus>
+            <!-- required tag means its mandatory and autofocus means after reload its automatially focus on textbox without using cursor-->
+        </div>
+
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="Female">Female</label>
+            <input type="radio" id="Female" name="gender" value="Female">
+        </div>
+
+        <div>
+            <h4>FAVOURITE FRUITS</h4>
+            <label for="Fruits">Mango</label>
+            <input type="checkbox" id="Fruits" name="Fruits" value="yes">
+            <label for="Banana">Banana</label>
+            <input type="checkbox" id="Banana" name="Fruits" value="yes">
+            <label for="Cherry">Cherry</label>
+            <input type="checkbox" id="Cherry" name="Fruits" value="yes">
+        </div>
+
+        <div>
+            <h4> Please select Your State</h4>
+
+            <label for="State">State</label>
+            <select name="State" id="State">
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Gujrat">Gujrat</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+            </select>
+        </div>
+
+    </form>
+</body>
+
+</html>
