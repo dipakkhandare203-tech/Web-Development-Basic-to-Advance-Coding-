@@ -8,7 +8,7 @@
     <style>
         form {
             border: 2px solid black;
-            width: 250px;
+            width: 300px;
             height: 250px;
             padding: 50px;
         }
@@ -22,7 +22,7 @@
     <form action="post">
 
         <div>
-            <label for="user">Name</label>
+            <label for="user">Enter Name </label>
             <input type="text" id="user" name="user" placeholder="Enter Your Name" required autofocus>
             <!-- required tag means its mandatory and autofocus means after reload its automatially focus on textbox without using cursor-->
         </div>
@@ -32,6 +32,27 @@
             <input type="radio" id="male" name="gender" value="male">
             <label for="Female">Female</label>
             <input type="radio" id="Female" name="gender" value="Female">
+        </div>
+
+        <div>
+            <label for="num">Number</label>
+            <select name="country" id="code">
+                <option value="+91">+91</option>
+                <option value="+1">+1</option>
+                <option value="+44">+44</option>
+            </select>
+            <input type="tel" id="num" name="Number" placeholder="123456789">
+        </div>
+
+        <div>
+            <label for="birth">DOB</label>
+            <input type="date" id="birth">
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+            <input type="number" id="age" size="1">
+            <input type="text" value="years" size="5" readonly>
         </div>
 
         <div>
