@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #red {
+            border: 2px solid black;
+            margin: 5px;
+
+        }
+
+        .c1 {
+            border: 2px solid black;
+            margin: 5px;
+            padding: 100px;
+            background-color: red;
+            position: fixed;
+            width: 1287px;
+            height: 10px;
+            filter: invert(1);
+        }
+
+        .c2 {
+            border: 2px solid black;
+            margin: 5px;
+            padding: 100px;
+            background-color: blue;
+            position: absolute;
+            top: 90px;
+            /*z-index:1;*/
+        }
+
+        .c3 {
+            border: 2px solid black;
+            margin: 5px;
+            padding: 100px;
+            background-color: green;
+            position: sticky;
+        }
+
+        .c4 {
+            border: 2px solid black;
+            margin: 5px;
+            padding: 100px;
+            background-color: yellow;
+            position: relative;
+            left: 30px;
+        }
+
+        .c5 {
+            border: 2px solid black;
+            margin: 5px;
+            padding: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="red">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+        <div class="c5"></div>
+    </div>
+</body>
+
+</html>
