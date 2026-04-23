@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* first priority*/
+        p {
+            color: red !important;
+        }
+
+        /* third priority*/
+        #f1 {
+            color: purple;
+        }
+
+        /*fourth priority*/
+        .test {
+            color: green;
+        }
+
+        /* fifth priority*/
+        h1.test {
+            color: brown;
+        }
+
+        /*sixth priority*/
+        h1 {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test" id="f1">
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, amet nemo modi nobis itaque aperiam
+            quisquam ab dolorem. Dolor unde veniam laborum veritatis.</h1>
+
+        <!--second priority-->
+        <P style="color: blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit amet veritatis qui atque
+            molestias doloremque voluptates odio doloribus ipsam saepe! Nemo, possimus repellat!</P>
+
+    </div>
+</body>
+
+</html>
